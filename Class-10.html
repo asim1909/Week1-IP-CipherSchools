@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images & Responsiveness in HTML</title>
+</head>
+<body>
+    <img src="https://jpeg.org/images/jpsearch-home.jpg" alt="House"
+    srcset="/assets/small.jpg 480w,
+            /assets/medium.jpg 800w, 
+            /assets/large.jpg 1200w"
+    sizes="(max-width: 480px) 240px,
+            (max-width: 480px) 480px,
+            (max-width: 480px) 960px"
+    >
+    <picture>
+        <source media="(max-width: 500px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+        <source media="(max-width: 900px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+        <img src="https://www.w3schools.com/html/img_food.jpg" alt="">
+    </picture>
+</body>
+</html>
